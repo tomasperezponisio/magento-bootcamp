@@ -27,9 +27,5 @@ class Productlist extends \Magento\Framework\View\Element\Template
         return $collection;        
     }
 
-    public function mostrarClase()
-	{
-		return __(get_class($this));
-	}
 } 
 ?>

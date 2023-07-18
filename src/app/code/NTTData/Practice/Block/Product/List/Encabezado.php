@@ -10,9 +10,4 @@ class Encabezado extends \NTTData\Practice\Block\Product\Productlist
 	{
 		parent::__construct($context, $productCollectionFactory);		
 	}
-
-	public function mostrarClase()
-	{
-		return __(get_class($this));
-	}
 }
