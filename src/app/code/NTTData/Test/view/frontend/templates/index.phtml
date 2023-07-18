@@ -1,0 +1,16 @@
+<?php
+
+// echo '<h2>Modulo Test</h2>';
+
+$ids = [1,2,3];
+
+$categoryProducts = $block->getProductCollectionByCategories($ids);
+
+if ($categoryProducts != null){
+    foreach ($categoryProducts as $product) {
+        echo $product->getName() . ' - ' . $product->getProductUrl() . '<br />';
+    }
+} else {
+    echo 'era null';
+}
+?>

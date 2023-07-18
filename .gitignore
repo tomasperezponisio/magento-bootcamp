@@ -1,0 +1,6 @@
+# Ignorar todos los archivos y carpetas
+/src/*
+
+# Incluir la carpeta específica (reemplaza "nombre_de_la_carpeta" con el nombre real)
+!/src/app/
+

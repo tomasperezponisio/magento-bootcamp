@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    layout="1column"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <referenceContainer name="content">
+        <!-- container product list que hace referencia a content -->
+        <container name="productlist">
+            <block
+                class="NTTData\Practice\Block\Product\Productlist"
+                name="nttdata_product_productlist"
+                template="NTTData_Practice::product/productlist.phtml" />
+        </container>
+        
+        <referenceContainer name="productlist">
+            <!-- container products que hace referencia a productlist -->
+            <container name="encabezado">
+                <block
+                    class="NTTData\Practice\Block\Product\List\Encabezado"
+                    name="nttdata_product_list_encabezado"
+                    template="NTTData_Practice::product/list/encabezado.phtml" />
+            </container>
+ 
+            <!-- container products que hace referencia a productlist -->
+            <container name="products">
+                <block
+                    class="NTTData\Practice\Block\Product\List\Products"
+                    name="nttdata_product_list_products"
+                    template="NTTData_Practice::product/list/products.phtml" />
+            </container>
+        </referenceContainer>
+
+    </referenceContainer>
+
+</page>
