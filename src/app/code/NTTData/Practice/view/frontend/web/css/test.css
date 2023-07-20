@@ -21,3 +21,11 @@
   padding: 10px;
   margin: 10px;
 }
+
+.hour-container {
+  color: darkslateblue;
+  border: 3px solid darkslateblue;
+  border-style: dashed;
+  padding: 10px;
+  margin: 10px;
+}

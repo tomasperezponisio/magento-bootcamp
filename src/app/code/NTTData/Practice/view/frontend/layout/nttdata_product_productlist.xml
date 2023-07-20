@@ -37,5 +37,11 @@
                 </container>
             <!-- </container> -->
         </referenceContainer>
+        <container name="hour" htmlTag="div" htmlClass="hour-container">
+            <block
+                class="NTTData\Practice\Block\Time\Hour"
+                name="nttdata_time_hour"
+                template="NTTData_Practice::time/hour.phtml" />
+        </container>   
     </referenceContainer>
 </page>
